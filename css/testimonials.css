@@ -1,0 +1,45 @@
+@import "base.css";
+
+.testimonials{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    height: 558px;
+}
+
+.clients-talk{
+    border: 2px solid black;
+    width: 337px;
+    height: 208px;
+    margin-top: 175px;
+    margin-left: 135px;
+}
+
+.client-text h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: #102437;
+}
+
+.client-text p{
+    font-size: 16px;
+    color: #7E8091;
+    margin-bottom: 28px;
+}
+
+.client-buttons button{
+    width: 54px;
+    height: 54px;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.client-images img{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 100px;
+}
