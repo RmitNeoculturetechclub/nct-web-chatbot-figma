@@ -1,0 +1,27 @@
+@import "base.css";
+
+.campaign {
+    background-color: var(--color-white);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 20%;
+}
+
+.button-get-started {
+    width: 162px;
+    height: 52px;
+    border: none;
+    border-radius: 26px;
+    font-size: 16px;
+    margin-left: 2px;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 450;
+}
