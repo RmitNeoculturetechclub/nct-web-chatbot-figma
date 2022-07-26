@@ -8,13 +8,18 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px;
+    grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
 }
 
 .grid-item {
-    padding: 10px;
+    padding: 100px;
 }
+
+.grid-second {
+    padding: 80px 0px 50px;
+}
+
 
 .button-get-started {
     width: 162px;
@@ -29,11 +34,17 @@
 }
 
 .campaign-heading {
-    font-size: 50px;
+    display: inline-block;
+    font-size: 25px;
     font-weight: 500;
+    line-height: 270%;
 }
 
 .campaign-text {
+    padding-top: 10px;
+    display: inline-block;
+    width: 85%;
+    height: auto;
     font-size: 16px;
     color: #7E8091;
 }
@@ -49,12 +60,19 @@
 }
 
 .superpower-heading {
-    font-size: 50px;
+    display: inline-block;
+    width: 60%;
+    font-size: 25px;
     color: white;
     font-weight: 500;
+    line-height: 270%;
 }
 
 .superpower-text {
+    padding-top: 10px;
+    display: inline-block;
     font-size: 16px;
     color: white;
+    width: 85%;
+    height: auto;
 }
