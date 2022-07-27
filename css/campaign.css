@@ -13,11 +13,18 @@
 }
 
 .grid-item {
+    align-self: center;
     padding: 100px;
 }
 
+.flex-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .grid-second {
-    padding: 80px 0px 50px;
+    padding: 0px 0px 50px;
 }
 
 
