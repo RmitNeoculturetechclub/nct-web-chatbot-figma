@@ -43,3 +43,54 @@
     margin-bottom: 90px;
     margin-left: 100px;
 }
+
+.client-card{
+    background-color: white;
+    width: 472px;
+    height: 182px;
+    border-radius: 18px;
+    display: block;
+    z-index: 1;
+    margin-top: 188px;
+    position: relative;
+    right: 98px;
+    display: flex;
+}
+
+.card-text{
+    margin-top: 31px;
+    margin-bottom: 14px;
+    margin-left: 31px;
+    margin-right: 26px;
+    font-size: 16px;
+    line-height: 26px;
+    width: 381px;
+    height: 78px;
+    color: #7E8091;
+
+}
+
+.card-author{
+    margin-left: 31px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.card-author h1{
+    font-size: 18px;
+}
+
+.card-author .stars{
+    margin-left: 179px;
+    color: #D1A10B;
+    font-size: 24px;
+}
+
+.flourish-card{
+    background-color: var(--color-primary);
+    width: 24px;
+    height: 182px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
