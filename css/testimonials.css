@@ -33,13 +33,17 @@
     font-weight: 500;
     border-radius: 50%;
     border: none;
-    text-align: center;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .client-buttons #left-button {
     background-color: white;
-    
+    border: #7E8091 solid 1px;
+}
+
+.client-buttons #right-button {
+    background-color: var(--color-primary);
+    color: white;
 }
 
 .client-images img{
