@@ -8,12 +8,12 @@ li, a, button {
     text-decoration: none;
 }
 
-header {
+header#main-header {
+    background-color: var(--color-secondary);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
-    background-color: var(--color-secondary);
+    padding: 20px 135px;
 }
 
 .logo {
@@ -39,12 +39,13 @@ header {
     color: white;
 }
 
-button {
+button.cta-btn {
     padding: 11px 22px;
     border-radius: 24px;
     background-color: var(--color-primary);
     color: white;
     cursor: pointer;
+    border: none;
 }
 
 .hover::after {
