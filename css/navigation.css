@@ -10,6 +10,9 @@ li, a, button {
 
 header#main-header {
     background-color: var(--color-secondary);
+}
+
+header#main-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
