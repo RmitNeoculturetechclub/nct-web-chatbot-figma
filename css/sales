@@ -1,0 +1,38 @@
+@import 'base.css';
+.sales{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    height: 652px;
+}
+
+.sales-sect{
+    width: 473px;
+    height: 298px;
+    margin-top: 184px;
+    margin-left: 149px;
+}
+
+.sales-text h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+.sales-text p{
+    font-size: 16px;
+    color: #7E8091;
+    margin-bottom: 38px;
+}
+
+.sales-button {
+    width: 162px;
+    height: 52px;
+    border: none;
+    border-radius: 26px;
+    font-size: 16px;
+    margin-left: 2px;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 450;
+}
