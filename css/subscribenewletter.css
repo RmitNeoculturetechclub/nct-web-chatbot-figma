@@ -79,9 +79,9 @@
 }
 
 .rectangle-inner{
-    position: absolute;
-    right: 185px;
-    bottom: 81px;
+    position: relative;
+    left: 439px;
+    bottom: 295px;
     width: 150px;
     height: 150px;
     display: flex;
@@ -91,7 +91,7 @@
 
 .rectangle-outline{
     position: relative;
-    left: 496px;
+    left: 600px;
     bottom: 310px;
     width: 180px;
     height: 180px;
@@ -118,9 +118,9 @@
     align-items: left;
 }
 .ellipse-inner{
-    position: absolute;
-    left: 185px;
-    bottom: 81px;
+    position: relative;
+    right: 665px;
+    bottom: 473px;
     width: 150px;
     height: 150px;
     display: flex;
