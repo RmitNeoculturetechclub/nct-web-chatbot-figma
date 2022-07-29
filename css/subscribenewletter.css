@@ -1,0 +1,129 @@
+@import "base.css";
+.subscribe{
+    width: 100%;
+    height: 400px;
+    background-color: var(--color-primary);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-text{
+    width: 400px;
+    height: 300px;
+}
+
+.subscribe-text h2{
+    padding: 70px 130px 20px 0;
+    font-size: 39px;
+    font-weight: 500;
+    text-align: center;
+    width: 554px;
+    height: 56px;
+}
+
+.subscribe-text p{
+    font-size: 14px;
+    color: var(--color-white);
+    text-align: center;
+    width: 406px;
+    height: 52px;
+    padding: 50px 20px 0 30px; /* top right bottom left */
+    margin-bottom: 100px;
+}
+
+.subscribe-bar{
+    margin-bottom: 120px;
+    border: 1px solid #9085d1;
+    background-color: white;
+    width: 412px;
+    height: 64px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-bar input{
+    width: 239px;
+    height: 55px;
+    border: none;
+    border-radius: 32px;
+    background-color: white;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.subscribe-bar button{
+    margin-left: 4px;
+    width: 139px;
+    height: 48px;
+    border: none;
+    border-radius: 32px;
+    font-size: 18px;
+    background-color: var(--color-secondary);
+    color: white;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.rectangle-inner{
+    position: absolute;
+    right: 185px;
+    bottom: 81px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.rectangle-outline{
+    position: relative;
+    left: 496px;
+    bottom: 310px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+
+.ellipse{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.ellipse-outline{
+    position: relative;
+    right: 500px;
+    bottom: 490px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.ellipse-inner{
+    position: absolute;
+    left: 185px;
+    bottom: 81px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
