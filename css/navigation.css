@@ -48,6 +48,10 @@ button.cta-btn {
     border: none;
 }
 
+button.cta-btn:hover {
+    filter: brightness(80%);
+}
+
 .hover::after {
     content: '';
     position: absolute;
