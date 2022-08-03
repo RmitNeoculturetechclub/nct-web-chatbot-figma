@@ -1,0 +1,116 @@
+@import 'base.css';
+
+.footer {
+    width: 100%;
+    height: 424px;
+    background-color: var(--color-secondary);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.footer-container {
+    box-sizing: border-box;
+    padding-top: 30px;
+    margin: 0
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 60% 18% 18% 18%;
+    justify-content: space-between;
+    padding: 80px 135px;
+    align-items: center;
+}
+
+.col1 h1 {
+    padding-bottom: 0.9rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.col1 li {
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8091;
+}
+
+ul{
+    list-style: none;
+}
+
+.col2 h1 {
+    padding-bottom: 0.9rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.col2 li {
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8091;
+}
+
+.col3 h1 {
+    padding-bottom: 0.9rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.col3 li {
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8091;
+}
+
+.chitchat {
+    width: 290px;
+    height: 135px;
+    align-self: center;
+    padding-right: 30px;
+}
+
+.chitchat-text h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 0.5rem;
+}
+
+.chitchat-text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8091;
+}
+
+.ai {
+    color: #9085D1;
+}
+
+hr {
+    width: 85%;
+    border: 0;
+    margin: 20px 100px;
+    border-bottom: 1px solid white;
+}
+
+.line {
+    display: grid;
+    grid-template-columns: 15% 15% 70%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+}
+
+.line p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #7e8091;
+}
