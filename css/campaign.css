@@ -91,11 +91,12 @@
     height: auto;
 }
 }
+
 /* For ipads: */
 @media only screen and (max-width: 768px) {
     .campaign {
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         background-color: var(--color-white);
     }
     .grid-container {
@@ -112,12 +113,14 @@
     height: auto;
     font-size: 16px;
     color: #7E8091;
+    text-align: center;
 }
 .campaign-heading {
     display: inline-block;
     font-size: 25px;
     font-weight: 500;
     line-height: 270%;
+    text-align: center;
 }
 .button-get-started {
     width: 162px;
@@ -130,6 +133,9 @@
     color: white;
     font-weight: 450;
 }
+.button-position {
+    padding: 0% 50%;
+}
 
 .flex-item {
     display: flex;
@@ -139,8 +145,17 @@
 }
 .grid-item {
     align-self: center;
-    padding: 50px;
+    padding: 10%;
 }
+/* .grid-second {
+    padding: 0% 50%;
+} */
+
+
+.positioning {
+    padding: 10px;
+}
+
 
 }
 
