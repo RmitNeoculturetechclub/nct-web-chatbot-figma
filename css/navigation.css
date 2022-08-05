@@ -69,3 +69,41 @@ button.cta-btn:hover {
 .hover:hover::after {
     transform: scaleY(1);
 }
+
+/* Hamburger menu */
+.menu-icon {
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 40px;
+    /* float: right; */
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+    nav, a.cta-link {
+        display: none;
+    }
+    /* hamburger menu */
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
