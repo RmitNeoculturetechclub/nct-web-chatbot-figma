@@ -36,6 +36,16 @@
     margin-right: 20px;
 }
 
+.client-buttons #right-button:hover, 
+.client-buttons #right-button:active {
+    filter: brightness(120%);
+}
+
+.client-buttons #left-button:hover, 
+.client-buttons #left-button:active {
+    filter: brightness(80%);
+}
+
 .client-buttons #left-button {
     background-color: white;
     color: black;
