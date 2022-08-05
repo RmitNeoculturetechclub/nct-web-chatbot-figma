@@ -1,5 +1,10 @@
 @import "base.css";
+* {
+    box-sizing: border-box;
+  }
 
+  /* For laptop: */
+@media only screen and (min-width: 769px) {
 .campaign {
     width: 100%;
     height: 100%;
@@ -19,6 +24,8 @@
 
 .flex-item {
     display: flex;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -82,4 +89,63 @@
     color: white;
     width: 85%;
     height: auto;
+}
+}
+/* For ipads: */
+@media only screen and (max-width: 768px) {
+    .campaign {
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-white);
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: 100%;
+        justify-content: space-evenly;
+    }
+    
+.campaign-text {
+    padding-top: 10px;
+    display: inline-block;
+    width: 85%;
+    height: auto;
+    font-size: 16px;
+    color: #7E8091;
+}
+.campaign-heading {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 270%;
+}
+.button-get-started {
+    width: 162px;
+    height: 52px;
+    border: none;
+    border-radius: 26px;
+    font-size: 16px;
+    margin-left: 2px;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 450;
+}
+
+.flex-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item {
+    align-self: center;
+    padding: 50px;
+}
+
+}
+
+
+@media only screen and (max-width: 320px) {
+    /* for iphones */
+    
 }
