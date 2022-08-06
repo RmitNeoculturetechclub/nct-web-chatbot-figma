@@ -14,28 +14,29 @@ header#main-header .container {
     justify-content: space-between;
     align-items: center;
     padding: 20px 135px;
+    position: relative;
 }
 
 .logo {
     cursor: pointer;
 }
 
-.nav_links {
+.navbar-links {
     list-style: none;
 }
 
-.nav_links li {
+.navbar-links li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav_links li a {
+.navbar-links li a {
     position: relative;
     padding: 3px 0;
     transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover {
+.navbar-links li a:hover {
     color: white;
 }
 
@@ -70,29 +71,35 @@ button.cta-btn:hover {
     transform: scaleY(1);
 }
 
-/* Hamburger menu */
-.menu-icon {
-    font-size: 30px;
-    line-height: 80px;
-    margin-right: 40px;
-    /* float: right; */
-    color: white;
-    cursor: pointer;
+/* Toggle button */
+.toggle-button {
+    /* position: absolute;
+    top: 0.7rem;
+    right: 1rem; */
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
 
-#check {
-    display: none;
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 /* Media queries */
 @media only screen and (max-width: 600px) {
-    nav, a.cta-link {
+    /* hide navbar & cta button */
+    .navbar, .cta-link {
         display: none;
     }
-    /* hamburger menu */
-    .menu-icon {
-        display: block;
+
+    /* show hamburger btn */
+    .toggle-button {
+        display: flex;
     }
 }
 
