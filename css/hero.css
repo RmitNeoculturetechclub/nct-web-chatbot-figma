@@ -92,3 +92,22 @@ input:active {
 .hero-image {
     padding: 20px;
 }
+
+@media only screen and (max-width: 1180px) {
+    .hero{
+        width: 1180px;
+    }
+    .hero-text h1{
+        font-size: 50px;
+    }
+    .hero-bar input {
+        width: 243px;
+        height: 53px;
+    }
+
+    .hero-bar button {
+        width: 129px;
+        height: 48px;
+        margin-left: 23px;
+    }
+}

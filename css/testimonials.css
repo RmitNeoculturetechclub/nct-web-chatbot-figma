@@ -112,3 +112,21 @@
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
 }
+
+@media only screen and (max-width: 1180px) {
+    .card-text {
+        size: 14px;
+    }
+
+    .client-card{
+        right: 20px;
+        width: 460px;
+    }
+
+    .card-author h1 {
+        font-size: 16px;
+    }
+    .card-author .stars{
+        font-size: 20px;
+    }
+}
