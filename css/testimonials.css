@@ -117,6 +117,7 @@
     .card-text {
         font-size: 14px;
     }
+    
 
     .client-card{
         right: 20px;
@@ -132,19 +133,59 @@
 }
 
 @media only screen and (max-width: 844px) {
+    .testimonials {
+        height: 100vh;
+    }
+
+    .clients-talk {
+        margin-left: 20px;
+    }
+
+    .client-text h1 {
+        font-size: 30px;
+    }
+
+    .client-text p {
+        font-size: 10px;
+    }
+
     .card-text {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .client-card{
-        right: 20px;
+        right: 10px;
         width: 460px;
     }
 
     .card-author h1 {
-        font-size: 16px;
+        font-size: 12px;
     }
     .card-author .stars{
-        font-size: 20px;
+        font-size: 14px;
+    }
+
+    .card-content {
+        height: 70px;
+    }
+
+    .card-text{
+        margin-top: 28px;
+        margin-bottom: 10px;
+        line-height: 20px;
+        height: 70px;
+        width: 295px;
+    }
+
+    .client-card {
+        height: 150px;
+    }
+
+    .flourish-card {
+        height: 150px;
+        width: 15px;
+    }
+    .client-images img {
+        width: 300px;
     }
 }
