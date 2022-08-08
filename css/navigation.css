@@ -5,39 +5,36 @@ li, a, button {
     text-decoration: none;
 }
 
-header#main-header {
+#main-header {
     background-color: var(--color-secondary);
 }
 
-header#main-header .container {
+#main-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 135px;
     position: relative;
+    padding: 10px 24px;
 }
 
 .logo {
     cursor: pointer;
 }
 
-.navbar-links {
-    list-style: none;
+.navbar {
+    width: 400px;
 }
 
-.navbar-links li {
-    display: inline-block;
-    padding: 0px 20px;
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar-links li a {
     position: relative;
     padding: 3px 0;
-    transition: all 0.3s ease 0s;
-}
-
-.navbar-links li a:hover {
-    color: white;
 }
 
 button.cta-btn {
@@ -49,33 +46,7 @@ button.cta-btn {
     border: none;
 }
 
-button.cta-btn:hover {
-    filter: brightness(80%);
-}
-
-.hover::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    transform: scaleY(0);
-    background-color: var(--color-primary);
-
-    transition: transform 0.3s;
-}
-
-.hover:hover::after {
-    transform: scaleY(1);
-}
-
-/* Toggle button */
 .toggle-button {
-    /* position: absolute;
-    top: 0.7rem;
-    right: 1rem; */
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -91,26 +62,89 @@ button.cta-btn:hover {
 }
 
 /* Media queries */
-@media only screen and (max-width: 600px) {
-    /* hide navbar & cta button */
+@media only screen and (max-width: 768px) {
+    #main-header {
+        position: relative;
+    }
+
     .navbar, .cta-link {
         display: none;
     }
+    
+    .navbar {
+        background-color: #fff;
+        position: absolute;
+        top: 54px;
+        left: 0;
+        width: 100%;
+    }
 
-    /* show hamburger btn */
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .navbar-links li a {
+        color: var(--color-secondary);
+        font-size: 1.7rem;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
     .toggle-button {
         display: flex;
     }
 }
 
-@media only screen and (min-width: 600px) {
-
-}
-
 @media only screen and (min-width: 768px) {
+    .toggle-button {
+        display: none;
+    }
 
+    .navbar, .cta-link {
+        display: block;
+    }
+
+    .navbar-links li a {
+        transition: all 0.3s ease 0s;
+    }
+    
+    .navbar-links li a:hover {
+        color: white;
+    }
+
+    button.cta-btn:hover {
+        filter: brightness(80%);
+    }
+    
+    .hover::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        transform: scaleY(0);
+        background-color: var(--color-primary);
+        transition: transform 0.3s;
+    }
+    
+    .hover:hover::after {
+        transform: scaleY(1);
+    }
 }
 
 @media only screen and (min-width: 992px) {
-
+    #main-header .container {
+        padding: 20px 135px;
+    }
 }

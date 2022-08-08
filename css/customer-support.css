@@ -1,4 +1,4 @@
-section.customer-support .container {
+.customer-support .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
