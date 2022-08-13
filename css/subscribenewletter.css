@@ -1,4 +1,5 @@
 @import "base.css";
+
 .subscribe{
     width: 100%;
     height: 400px;
@@ -7,47 +8,45 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .subscribe-text{
-    width: 400px;
-    height: 300px;
+    width: 554px;
+    height: 245px;
 }
 
-.subscribe-text h2{
-    padding: 70px 130px 20px 0;
-    font-size: 39px;
-    font-weight: 500;
+
+.subscribe-text h1{
+    padding-top: 60px;
+    font-size: 40px;
+    font-weight: 600;
     text-align: center;
-    width: 554px;
-    height: 56px;
 }
 
 .subscribe-text p{
-    font-size: 14px;
-    color: var(--color-white);
+    font-size: 16px;
+    line-height: 30px;
     text-align: center;
-    width: 406px;
-    height: 52px;
-    padding: 50px 20px 0 30px; /* top right bottom left */
-    margin-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
 .subscribe-bar{
     margin-bottom: 120px;
     border: 1px solid #9085d1;
     background-color: white;
-    width: 412px;
-    height: 64px;
+    width: 422px;
+    height: 65px;
     border-radius: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.subscribe-bar input{
-    width: 239px;
-    height: 55px;
+.subscribe-bar input, input:active{
+    width: 253px;
+    height: 63px;
     border: none;
     border-radius: 32px;
     background-color: white;
@@ -58,9 +57,8 @@
 }
 
 .subscribe-bar button{
-    margin-left: 4px;
     width: 139px;
-    height: 48px;
+    height: 54px;
     border: none;
     border-radius: 32px;
     font-size: 18px;
@@ -71,59 +69,109 @@
     justify-content: center;
 }
 
-.rectangle{
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    align-items: right;
-}
 
-.rectangle-inner{
-    position: relative;
-    left: 439px;
-    bottom: 295px;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: right;
-    align-items: right;
-}
+/* Responsive */
+@media only screen and (max-width: 1100px) and (min-width: 850px){
+    .subscribe{
+        width: 1100px;
+    }
+    .subscribe-text h1{
+        font-size: 40px;
+    }
 
-.rectangle-outline{
-    position: relative;
-    left: 600px;
-    bottom: 310px;
-    width: 180px;
-    height: 180px;
-    display: flex;
-    justify-content: right;
-    align-items: right;
+    .subscribe-bar input {
+        width: 253px;
+        height: 63px;
+    }
+
+    .subscribe-bar button {
+        width: 139px;
+        height: 54px;
+    }
 }
 
 
-.ellipse{
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: left;
+/* Ipad series */
+@media only screen and (max-width: 830px) and (min-width: 700px) {
+    .subscribe-text h1{
+        font-size: 30px;
+    }
+
+    .subscribe-text p {
+        font-size: 15px;
+    }
+
+    .subscribe-bar form {
+        height: 50px;
+    }
+
+    .subscribe-bar input {
+        width: 245px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .subscribe-bar button {
+        width: 110px;
+        height: 40px;
+        font-size: 15px;
+        margin-left: 30px;
+    }
 }
-.ellipse-outline{
-    position: relative;
-    right: 500px;
-    bottom: 490px;
-    width: 180px;
-    height: 180px;
-    display: flex;
-    justify-content: left;
-    align-items: left;
+
+.rectangle{ 
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    right: 70px;
+    bottom: 180px;
 }
-.ellipse-inner{
-    position: relative;
-    right: 665px;
-    bottom: 473px;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: left;
-    align-items: left;
+
+.ellipse{ 
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    left: 80px;
+    bottom: 160px;
+}
+
+/* Iphone series */
+@media only screen and (max-width: 500px){
+
+    .subscribe-text h1{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .subscribe-text p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .subscribe-bar{
+        width: 350px;
+        height: 35px;
+        border-radius: 32px;
+    }
+
+    .subscribe-bar input {
+        width: 200px;
+        height: 34px;
+        font-size: 16px;
+    }
+
+    .subscribe-bar button {
+        width: 110px;
+        height: 27px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .rectangle{ 
+        display: none;
+    }
+    
+    .ellipse{ 
+        display: none;
+    }
 }
