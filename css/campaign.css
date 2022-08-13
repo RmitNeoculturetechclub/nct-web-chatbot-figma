@@ -74,7 +74,7 @@
 
     .superpower-heading {
         display: inline-block;
-        width: 60%;
+        /* width: 60%; */
         font-size: 25px;
         color: white;
         font-weight: 500;
@@ -92,7 +92,7 @@
 }
 
 /* For ipads: */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
     .campaign {
         width: 100%;
         background-color: var(--color-white);
@@ -174,7 +174,7 @@
 
 
     /* for iphones */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
     .campaign {
         width: 100%;
         background-color: var(--color-white);
