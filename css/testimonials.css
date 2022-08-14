@@ -132,7 +132,7 @@
     }
 }
 
-@media only screen and (max-width: 844px) {
+@media only screen and (max-width: 844px) and (min-width: 392px) {
     .testimonials {
         height: 100vh;
     }
@@ -187,5 +187,61 @@
     }
     .client-images img {
         width: 300px;
+    }
+}
+
+@media only screen and (max-width: 391px) {
+    .testimonials {
+        flex-direction: column;
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    .clients-talk {
+        width: 80%;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+
+    .client-talk p {
+        font-size: 12px;
+    }
+
+    .client-text h1 {
+        font-size: 30px;
+    }
+
+    .client-images img {
+        margin: 0;
+        width: 60%;
+        margin-left: 50px;
+    }
+
+    .client-card {
+        width: 100%;
+        margin-top: 10px;
+        right: 0;
+    }
+
+    .card-text {
+        font-size: 10px;
+
+    }
+
+    .card-content {
+        width: 250px;
+    }
+
+    .card-text {
+        width: 250px;
+    }
+
+    .card-author h1 {
+        font-size: 14px;
+    }
+
+    .card-author .stars {
+        font-size: 18px;
+        margin-left: 80px;
     }
 }

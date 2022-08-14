@@ -114,7 +114,11 @@ input:active {
     }
 }
 
-@media only screen and (max-width: 844px) {
+@media only screen and (max-width: 844px) and (min-width: 392px) {
+    .hero {
+        width: 390px;
+    }
+
     .hero-text h1{
         font-size: 30px;
     }
@@ -148,5 +152,57 @@ input:active {
 
     .hero-image img {
         width: 60%;
+    }
+}
+
+@media only screen and (max-width: 391px) {
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 25px;
+    }
+
+    .hero-subtitle {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 18px;
+    }
+
+    .hero-images {
+        flex-direction: column;
+    }
+
+    .hero-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-image img {
+        width: 60%;
+    }
+
+    .hero-bar input {
+        width: 100px;
+        height: 26px;
+        font-size: 12px;
+    }
+
+    .hero-bar form {
+        height: 26px;
+    }
+
+    .hero-bar {
+        width: 90%;
+    }
+
+    .hero-bar button {
+        width: 90px;
+        height: 26px;
+        margin-left: 130px;
+        font-size: 12px;
+        margin-top: 3px
     }
 }
