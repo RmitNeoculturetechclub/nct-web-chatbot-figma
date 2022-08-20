@@ -1,5 +1,6 @@
 @import "base.css";
-.hero{
+
+.hero {
     width: 100%;
     height: 100vh;
     background-color: var(--color-secondary);
@@ -9,39 +10,39 @@
     align-items: center;
 }
 
-.hero-text{
+.hero-text {
     width: 856px;
     height: 318px;
 }
 
-.hero-text h1{
+.hero-text h1 {
     font-size: 70px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
 }
 
-.hero-text p{
+.hero-text p {
     font-size: 18px;
     color: var(--color-white);
 }
 
-.hero-subtitle{
+.hero-subtitle {
     display: flex;
     justify-content: center;
 }
 
-.hero-subtitle-text{
+.hero-subtitle-text {
     display: flex;
     padding: 10px;
     align-items: center;
 }
 
-.hero-subtitle-text img{
+.hero-subtitle-text img {
     margin-right: 5px;
 }
 
 
-.hero-bar{
+.hero-bar {
     border: 1px solid #324354;
     background-color: #283A4B;
     width: 422px;
@@ -50,7 +51,8 @@
     display: flex;
 }
 
-.hero-bar input, input:active{
+.hero-bar input,
+input:active {
     width: 253px;
     height: 63px;
     border: none;
@@ -60,7 +62,7 @@
     margin-left: 20px;
 }
 
-.hero-bar button{
+.hero-bar button {
     width: 139px;
     height: 54px;
     border: none;
@@ -72,7 +74,14 @@
     font-weight: 500;
 }
 
-.hero-images{
+.hero-bar button:hover, 
+.hero-bar button:active{
+    filter: brightness(120%);
+    width: 142px;
+    height: 57px;
+}
+
+.hero-images {
     margin-top: 30px;
     width: 100%;
     display: flex;
@@ -80,6 +89,120 @@
     align-items: center;
 }
 
-.hero-image{
+.hero-image {
     padding: 20px;
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 845px){
+    .hero{
+        width: 1180px;
+    }
+    .hero-text h1{
+        font-size: 50px;
+    }
+
+
+    .hero-bar input {
+        width: 243px;
+        height: 53px;
+    }
+
+    .hero-bar button {
+        width: 129px;
+        height: 48px;
+        margin-left: 23px;
+    }
+}
+
+@media only screen and (max-width: 844px) and (min-width: 392px) {
+    .hero {
+        width: 390px;
+    }
+
+    .hero-text h1{
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+    .hero-bar input {
+        width: 121px;
+        height: 26px;
+        font-size: 12px;
+    }
+
+    .hero-bar form {
+        height: 26px;
+    }
+
+    .hero-bar button {
+        width: 110px;
+        height: 26px;
+        margin-left: 165px;
+        font-size: 12px;
+        margin-top: 3px
+    }
+
+    .hero-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 391px) {
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 25px;
+    }
+
+    .hero-subtitle {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 18px;
+    }
+
+    .hero-images {
+        flex-direction: column;
+    }
+
+    .hero-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-image img {
+        width: 60%;
+    }
+
+    .hero-bar input {
+        width: 100px;
+        height: 26px;
+        font-size: 12px;
+    }
+
+    .hero-bar form {
+        height: 26px;
+    }
+
+    .hero-bar {
+        width: 90%;
+    }
+
+    .hero-bar button {
+        width: 90px;
+        height: 26px;
+        margin-left: 130px;
+        font-size: 12px;
+        margin-top: 3px
+    }
 }

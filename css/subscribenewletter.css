@@ -1,0 +1,177 @@
+@import "base.css";
+
+.subscribe{
+    width: 100%;
+    height: 400px;
+    background-color: var(--color-primary);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.subscribe-text{
+    width: 554px;
+    height: 245px;
+}
+
+
+.subscribe-text h1{
+    padding-top: 60px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.subscribe-text p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.subscribe-bar{
+    margin-bottom: 120px;
+    border: 1px solid #9085d1;
+    background-color: white;
+    width: 422px;
+    height: 65px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-bar input, input:active{
+    width: 253px;
+    height: 63px;
+    border: none;
+    border-radius: 32px;
+    background-color: white;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.subscribe-bar button{
+    width: 139px;
+    height: 54px;
+    border: none;
+    border-radius: 32px;
+    font-size: 18px;
+    background-color: var(--color-secondary);
+    color: white;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 1100px) and (min-width: 850px){
+    .subscribe{
+        width: 1100px;
+    }
+    .subscribe-text h1{
+        font-size: 40px;
+    }
+
+    .subscribe-bar input {
+        width: 253px;
+        height: 63px;
+    }
+
+    .subscribe-bar button {
+        width: 139px;
+        height: 54px;
+    }
+}
+
+
+/* Ipad series */
+@media only screen and (max-width: 830px) and (min-width: 700px) {
+    .subscribe-text h1{
+        font-size: 30px;
+    }
+
+    .subscribe-text p {
+        font-size: 15px;
+    }
+
+    .subscribe-bar form {
+        height: 50px;
+    }
+
+    .subscribe-bar input {
+        width: 245px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .subscribe-bar button {
+        width: 110px;
+        height: 40px;
+        font-size: 15px;
+        margin-left: 30px;
+    }
+}
+
+.rectangle{ 
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    right: 70px;
+    bottom: 180px;
+}
+
+.ellipse{ 
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    left: 80px;
+    bottom: 160px;
+}
+
+/* Iphone series */
+@media only screen and (max-width: 500px){
+
+    .subscribe-text h1{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .subscribe-text p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .subscribe-bar{
+        width: 350px;
+        height: 35px;
+        border-radius: 32px;
+    }
+
+    .subscribe-bar input {
+        width: 200px;
+        height: 34px;
+        font-size: 16px;
+    }
+
+    .subscribe-bar button {
+        width: 110px;
+        height: 27px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .rectangle{ 
+        display: none;
+    }
+    
+    .ellipse{ 
+        display: none;
+    }
+}

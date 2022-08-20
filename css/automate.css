@@ -1,0 +1,139 @@
+@import "base.css";
+
+/* Responsive */
+@media only screen and (min-width: 800px) {
+    .automate {
+        width: 100%;
+        height: 550px;
+        background-color: white;
+    }
+
+    .storage {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-evenly;
+    }
+
+    /* Control both the image and the text */
+    .text-allign {
+        align-self: center;
+        padding: 0 0 0 50px;
+    }
+
+    /* Control the image */
+    .image-allign { 
+        margin-left: 30px;
+        display: flex;
+        width: 517px;
+        height: 359px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .automate-text {
+        padding: 0px 0px 45px 20px;
+    }
+
+    .Automate-heading {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 200%;
+    }
+
+    .Automate-subtitle {
+        padding-top: 10px;
+        display: inline-block;
+        width: 85%;
+        height: auto;
+        font-size: 16px;
+        color: #7E8091;
+    }
+}
+
+/* Ipad series */
+@media only screen and (max-width: 850px) and (min-width: 700px) {
+    .automate {
+        width: 100%;
+        height: 80%;
+        background-color: var(--color-white);
+    }
+    .storage {
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: 100%;
+        justify-content: space-evenly;
+    }
+    
+    .automate-text {
+        padding: 38px;
+        display: inline-block;
+        height: auto;
+        font-size: 18px;
+        color: black;
+    }
+    .automate-heading {
+        display: inline-block;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 200%;
+        padding: 0px 38px;
+    }
+
+    .image-allign {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-allign {
+        align-self: center;
+        padding: 5% 20% 0% 5%;
+        margin-left: 100px;
+    }
+}
+
+/* Iphone series */
+@media only screen and (max-width: 500px) {
+    .automate {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+    .storage {
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: 100%;
+        justify-content: space-evenly;
+    }
+    
+    .automate-text {
+        padding: 38px;
+        display: inline-block;
+        height: auto;
+        font-size: 16px;
+        color: black;
+    }
+
+    .automate-heading {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 200%;
+        padding: 0px 38px;
+    }
+
+    .image-allign {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-allign {
+        padding-top: 20px;
+        align-self: center;
+        padding: 0% 10% 0% 10%;
+    }
+}
