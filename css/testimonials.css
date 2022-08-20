@@ -36,6 +36,16 @@
     margin-right: 20px;
 }
 
+.client-buttons #right-button:hover, 
+.client-buttons #right-button:active {
+    filter: brightness(120%);
+}
+
+.client-buttons #left-button:hover, 
+.client-buttons #left-button:active {
+    filter: brightness(80%);
+}
+
 .client-buttons #left-button {
     background-color: white;
     color: black;
@@ -101,4 +111,137 @@
     height: 182px;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 845px) {
+    .card-text {
+        font-size: 14px;
+    }
+    
+
+    .client-card{
+        right: 20px;
+        width: 460px;
+    }
+
+    .card-author h1 {
+        font-size: 16px;
+    }
+    .card-author .stars{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 844px) and (min-width: 392px) {
+    .testimonials {
+        height: 100vh;
+    }
+
+    .clients-talk {
+        margin-left: 20px;
+    }
+
+    .client-text h1 {
+        font-size: 30px;
+    }
+
+    .client-text p {
+        font-size: 10px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .client-card{
+        right: 10px;
+        width: 460px;
+    }
+
+    .card-author h1 {
+        font-size: 12px;
+    }
+    .card-author .stars{
+        font-size: 14px;
+    }
+
+    .card-content {
+        height: 70px;
+    }
+
+    .card-text{
+        margin-top: 28px;
+        margin-bottom: 10px;
+        line-height: 20px;
+        height: 70px;
+        width: 295px;
+    }
+
+    .client-card {
+        height: 150px;
+    }
+
+    .flourish-card {
+        height: 150px;
+        width: 15px;
+    }
+    .client-images img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 391px) {
+    .testimonials {
+        flex-direction: column;
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    .clients-talk {
+        width: 80%;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+
+    .client-talk p {
+        font-size: 12px;
+    }
+
+    .client-text h1 {
+        font-size: 30px;
+    }
+
+    .client-images img {
+        margin: 0;
+        width: 60%;
+        margin-left: 50px;
+    }
+
+    .client-card {
+        width: 100%;
+        margin-top: 10px;
+        right: 0;
+    }
+
+    .card-text {
+        font-size: 10px;
+
+    }
+
+    .card-content {
+        width: 250px;
+    }
+
+    .card-text {
+        width: 250px;
+    }
+
+    .card-author h1 {
+        font-size: 14px;
+    }
+
+    .card-author .stars {
+        font-size: 18px;
+        margin-left: 80px;
+    }
 }
