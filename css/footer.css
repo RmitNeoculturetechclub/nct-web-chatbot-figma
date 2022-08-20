@@ -1,0 +1,136 @@
+@import 'base.css';
+
+.footer {
+    width: 100%;
+    height: 424px;
+    background-color: var(--color-secondary);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+.column {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 70px;
+    padding: 0px 5px;
+}
+
+.column h1 {
+    padding-bottom: 1.2rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.column li {
+    padding-top: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8091;
+}
+
+ul{
+    list-style: none;
+}
+
+.chitchat {
+    width: 290px;
+    height: 135px;
+    align-self: center;
+    margin: 0 70px;
+}
+
+.chitchat-text h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 0.5rem;
+}
+
+.chitchat-text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8091;
+}
+
+.ai {
+    color: #9085D1;
+}
+
+hr {
+    width: 85%;
+    border: 0;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0%;
+}
+
+.line p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #7e8091;
+
+}
+
+#one {
+    width: 20%;
+    margin-left: 100px;
+}
+
+#two {
+    width: 20%;
+}
+
+#three {
+    width: 40%;
+    text-align: right;
+    margin-right: 100px;
+}
+
+@media (max-width: 800px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .chitchat {
+        max-width: 300px;
+        
+    }
+
+    .column {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+
+    .chitchat,
+    .column {
+        width: 100%;
+    }
+
+    #one {
+        margin-left: 50px;
+    }
+
+    #two {
+        margin-right: 50px;
+    }
+}
